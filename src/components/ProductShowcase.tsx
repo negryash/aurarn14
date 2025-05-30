@@ -7,15 +7,15 @@ const ProductShowcase = () => {
   return (
     <section className="py-20 px-6 relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-purple-900/30"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-6">
             Stunning Design
           </h2>
-          <p className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+          <p className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
             Meets Powerful Innovation
           </p>
         </div>
@@ -36,7 +36,7 @@ const ProductShowcase = () => {
               />
               
               {/* Glowing Effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-3xl blur-xl animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-blue-500/20 to-indigo-500/20 rounded-3xl blur-xl animate-pulse"></div>
             </div>
           </div>
 
@@ -44,38 +44,38 @@ const ProductShowcase = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
                 <h3 className="text-2xl font-semibold text-white">Ultra-thin bezels</h3>
               </div>
-              <p className="text-gray-300 text-lg ml-7">
+              <p className="text-gray-400 text-lg ml-7">
                 Immersive 6.8" display with virtually no borders for an uninterrupted viewing experience.
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
                 <h3 className="text-2xl font-semibold text-white">Aurora Mist glass finish</h3>
               </div>
-              <p className="text-gray-300 text-lg ml-7">
+              <p className="text-gray-400 text-lg ml-7">
                 Premium frosted glass back that shifts colors like the northern lights.
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="w-3 h-3 bg-pink-400 rounded-full animate-pulse"></div>
+                <div className="w-3 h-3 bg-indigo-400 rounded-full animate-pulse"></div>
                 <h3 className="text-2xl font-semibold text-white">Ambient light-reactive back panel</h3>
               </div>
-              <p className="text-gray-300 text-lg ml-7">
+              <p className="text-gray-400 text-lg ml-7">
                 Smart lighting system that adapts to your environment for stunning visual effects.
               </p>
             </div>
 
             {/* Interactive Elements */}
-            <div className="mt-8 p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
+            <div className="mt-8 p-6 bg-black/60 backdrop-blur-sm rounded-2xl border border-gray-700">
               <p className="text-white font-medium">💡 Interactive Experience</p>
-              <p className="text-gray-300 mt-2">
+              <p className="text-gray-400 mt-2">
                 Hover over the device to see the interactive preview in action
               </p>
             </div>
