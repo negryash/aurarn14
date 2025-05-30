@@ -1,5 +1,5 @@
 
-import { camera, battery, lightning } from "lucide-react";
+import { Camera, Battery, Zap } from "lucide-react";
 import { useState } from "react";
 
 const Features = () => {
@@ -7,19 +7,19 @@ const Features = () => {
 
   const features = [
     {
-      icon: camera,
+      icon: Camera,
       title: "108MP Triple AI Camera",
       description: "Perfect shots day or night",
       details: "Advanced computational photography with AI scene detection"
     },
     {
-      icon: lightning,
+      icon: Zap,
       title: "90W Fast Charging",
       description: "From 0 to 100% in under 30 minutes",
       details: "Revolutionary charging technology with intelligent battery management"
     },
     {
-      icon: battery,
+      icon: Battery,
       title: "QuantumCore X7 Processor",
       description: "Game, stream, and create without limits",
       details: "Next-generation 4nm chipset with AI acceleration"
