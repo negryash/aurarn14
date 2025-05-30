@@ -1,6 +1,7 @@
 
 import { Camera, Battery, Zap } from "lucide-react";
 import { useState } from "react";
+import InteractiveSpecs from "./InteractiveSpecs";
 
 const Features = () => {
   const [hoveredFeature, setHoveredFeature] = useState<number | null>(null);
@@ -26,16 +27,10 @@ const Features = () => {
     }
   ];
 
-  const specs = [
-    { label: "144Hz AMOLED Display", value: "144", unit: "Hz" },
-    { label: "5300mAh Battery", value: "5300", unit: "mAh" },
-    { label: "2K HDR10+ Visuals", value: "2K", unit: "HDR10+" }
-  ];
-
   return (
     <section className="py-20 px-6 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-black"></div>
+      <div className="absolute inset-0 bg-black"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Title */}
@@ -55,7 +50,7 @@ const Features = () => {
             return (
               <div
                 key={index}
-                className={`relative p-8 bg-black/60 backdrop-blur-sm rounded-2xl border border-gray-700 transition-all duration-300 hover:scale-105 hover:bg-black/80 cursor-pointer ${
+                className={`relative p-8 bg-gray-900/80 backdrop-blur-sm rounded-2xl border border-gray-800 transition-all duration-300 hover:scale-105 hover:bg-gray-900/90 cursor-pointer ${
                   hoveredFeature === index ? 'shadow-2xl shadow-purple-500/20' : ''
                 }`}
                 onMouseEnter={() => setHoveredFeature(index)}
@@ -87,19 +82,8 @@ const Features = () => {
           })}
         </div>
 
-        {/* Animated Specs Counter */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {specs.map((spec, index) => (
-            <div key={index} className="text-center p-6 bg-black/60 backdrop-blur-sm rounded-2xl border border-gray-700">
-              <div className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 mb-2">
-                {spec.value}
-              </div>
-              <div className="text-lg text-gray-400 font-medium">
-                {spec.label}
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Interactive Specs Section */}
+        <InteractiveSpecs />
 
         {/* Final CTA */}
         <div className="text-center mt-16">
