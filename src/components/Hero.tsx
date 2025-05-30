@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -55,8 +54,7 @@ const Hero = () => {
           </Button>
           <Button 
             size="lg" 
-            variant="outline" 
-            className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105"
+            className="border-2 border-purple-400 bg-purple-600/20 text-white hover:bg-purple-600/40 hover:border-purple-300 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 shadow-lg"
           >
             Buy Now
           </Button>
