@@ -1,9 +1,11 @@
 
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsLoaded(true);
@@ -16,7 +18,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/10 via-blue-900/10 to-purple-900/10 animate-pulse"></div>
       </div>
       
-      {/* Floating Orbs Animation */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl animate-bounce"></div>
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-indigo-500/15 rounded-full blur-2xl animate-spin"></div>
@@ -29,7 +30,6 @@ const Hero = () => {
           Now Available
         </div>
 
-        {/* Main Headline */}
         <h1 className="text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-purple-400 mb-6 animate-scale-in">
           RENZON R14
           <span className="block text-5xl md:text-7xl mt-2 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
@@ -37,7 +37,6 @@ const Hero = () => {
           </span>
         </h1>
 
-        {/* Subheadline */}
         <p className="text-xl md:text-2xl text-gray-400 mb-4 animate-fade-in">
           Design that mesmerizes.
         </p>
@@ -48,6 +47,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in">
           <Button 
+            onClick={() => navigate('/specifications')}
             size="lg" 
             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105"
           >
