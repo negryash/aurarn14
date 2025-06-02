@@ -54,6 +54,7 @@ const Hero = () => {
             Explore Features
           </Button>
           <Button 
+            onClick={() => navigate('/purchase')}
             size="lg" 
             className="border-2 border-gray-600 bg-black/40 text-white hover:bg-gray-900/60 hover:border-gray-500 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-105 shadow-lg"
           >
