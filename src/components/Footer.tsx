@@ -1,13 +1,9 @@
-
 import { Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
 const Footer = () => {
   const navigate = useNavigate();
-
-  return (
-    <footer className="bg-black/80 backdrop-blur-sm border-t border-gray-800 py-16">
+  return <footer className="bg-black/80 backdrop-blur-sm border-t border-gray-800 py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12">
           {/* About Section */}
@@ -48,19 +44,12 @@ const Footer = () => {
             
             <div className="flex items-center space-x-3 text-gray-300">
               <Mail size={20} />
-              <a 
-                href="mailto:djbalda0@gmail.com" 
-                className="hover:text-purple-400 transition-colors"
-              >
+              <a href="mailto:djbalda0@gmail.com" className="hover:text-purple-400 transition-colors">
                 djbalda0@gmail.com
               </a>
             </div>
             
-            <Button 
-              onClick={() => navigate('/contact')}
-              variant="outline"
-              className="border-gray-600 text-white hover:bg-gray-800 hover:border-gray-500"
-            >
+            <Button onClick={() => navigate('/contact')} variant="outline" className="border-gray-600 hover:bg-gray-800 hover:border-gray-500 text-slate-500">
               Связаться с нами
             </Button>
           </div>
@@ -72,8 +61,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
