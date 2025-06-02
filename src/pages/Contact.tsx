@@ -1,17 +1,10 @@
-
 import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Contact = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white">
+  return <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white">
       {/* Header */}
       <div className="container mx-auto px-6 py-8">
-        <Button 
-          onClick={() => window.history.back()}
-          variant="outline" 
-          className="mb-8 border-gray-600 text-white hover:bg-gray-800"
-        >
+        <Button onClick={() => window.history.back()} variant="outline" className="mb-8 border-gray-600 text-slate-900 bg-zinc-200 hover:bg-zinc-100">
           ← Назад
         </Button>
       </div>
@@ -71,19 +64,13 @@ const Contact = () => {
                   <Mail className="text-purple-400" size={24} />
                   <span className="text-xl font-semibold text-white">Email</span>
                 </div>
-                <a 
-                  href="mailto:djbalda0@gmail.com" 
-                  className="text-purple-400 hover:text-purple-300 text-lg font-medium transition-colors"
-                >
+                <a href="mailto:djbalda0@gmail.com" className="text-purple-400 hover:text-purple-300 text-lg font-medium transition-colors">
                   djbalda0@gmail.com
                 </a>
               </div>
               
               <div className="mt-8">
-                <Button 
-                  onClick={() => window.location.href = 'mailto:djbalda0@gmail.com'}
-                  className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg font-semibold rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105"
-                >
+                <Button onClick={() => window.location.href = 'mailto:djbalda0@gmail.com'} className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 text-lg font-semibold rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 hover:scale-105">
                   <Mail className="mr-2" size={20} />
                   Написать нам
                 </Button>
@@ -92,8 +79,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
